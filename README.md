@@ -18,3 +18,5 @@ This is a simple **Pricing Cards** project built with **HTML and CSS**, focused 
 - Mobile → adjusted layout with smaller fonts and spacing.
 
 ## 📸 Preview
+
+![pricing-cards](https://github.com/user-attachments/assets/ab5d1ca9-85de-416a-85bf-f40678af4035)
