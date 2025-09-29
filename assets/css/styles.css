@@ -1,0 +1,182 @@
+/*Importação de fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*Base e reset*/
+html { 
+    font-size: 62.5%; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+  padding: 2.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+/*Cabeçalho*/
+header {
+  margin-bottom: 10rem;
+}
+
+header h1 {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  color: #748DAE;
+}
+
+header p {
+  font-size: 2rem;
+  color: #5D688A;
+}
+
+/*Seção de pricing*/
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/*Cada card*/
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1.5rem;
+  flex: 0 1 calc(33.33% - 1.5rem); /* 3 cards lado a lado */
+  min-height: 500px;
+  text-align: left;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/*Título do plano*/
+.card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+/*Preço*/
+.card .price {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/*Lista de features*/
+.card ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.card ul li {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
+
+/*Botão*/
+.card button {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 120px;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+/*Plano de destaque*/
+.featured {
+  border: 2px solid #007bff;
+  transform: scale(1.08);
+  background: linear-gradient(#ffffff, #faabdc);
+}
+
+.featured button {
+  background-color: #009cb8;
+}
+
+.featured button:hover {
+  background-color: #095b69;
+}
+
+/*Footer*/
+footer {
+  margin-top: auto;
+  color: #555879;
+  font-size: 2rem;
+}
+
+/*Tablet*/
+@media (max-width:768px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 1.5rem;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/*Mobile*/
+@media (max-width: 600px){
+  header h1 { 
+    font-size: 2rem; 
+}
+
+  .card {
+    width: 90%;
+    max-width: none;
+  }
+
+  .card h2 { 
+    font-size: 1.5rem; 
+}
+
+  .card .price { 
+    font-size: 1.3rem; 
+    margin: 2rem 0; 
+}
+
+  .card button { 
+    font-size: 0.9rem; 
+    padding: 0.6rem; 
+}
+}
